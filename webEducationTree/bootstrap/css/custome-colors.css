@@ -1,0 +1,10 @@
+﻿.panel-primary > .panel-heading
+{
+    background-color:#508eb7!important;    
+     font-weight:bold; 
+    font-family:Impact, Charcoal, sans-serif;
+}
+.panel-primary .panel-heading btn-primary
+{
+     background-color:#508eb7  !important; 
+}
