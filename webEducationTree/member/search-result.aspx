@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Member Profile" Language="C#" MasterPageFile="~/member/member.Master" AutoEventWireup="true" CodeBehind="member-profile.aspx.cs" Inherits="webEducationTree.member.WebForm6" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/member/member.Master" AutoEventWireup="true" CodeBehind="search-result.aspx.cs" Inherits="webEducationTree.member.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="contentNavbar" runat="server">
-    <li class=""><a href="member-home.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-    <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+
+    <li class="active"><a href="member-home.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+    <li class="dropdown "><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
         aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Hi!!
         <span id="member_name" runat="server">Admin</span>
         <span class="caret"></span></a>
@@ -13,10 +13,7 @@
     </li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMain" runat="server">
-
-    <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
-        <a href="edit-progfile-general.aspx" class="btn btn-info col-md-12 " style="font-size: 25px;">edit profile</a>
-    </div>
+     <div style="padding:20px"></div>
     <div class="panel panel-primary ">
         <div class="panel-heading" style="text-align: center; font-size: 25px;">
             General Information
@@ -168,5 +165,7 @@
         </div>
     </div>
 </asp:Content>
+
+
 <asp:Content ID="Content3" ContentPlaceHolderID="contentScripts" runat="server">
 </asp:Content>

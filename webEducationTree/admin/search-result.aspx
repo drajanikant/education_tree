@@ -1,22 +1,43 @@
-﻿<%@ Page Title="Member Profile" Language="C#" MasterPageFile="~/member/member.Master" AutoEventWireup="true" CodeBehind="member-profile.aspx.cs" Inherits="webEducationTree.member.WebForm6" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin/admin-master.Master" AutoEventWireup="true" CodeBehind="search-result.aspx.cs" Inherits="webEducationTree.admin.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="contentNavbar" runat="server">
-    <li class=""><a href="member-home.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-    <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Hi!!
-        <span id="member_name" runat="server">Admin</span>
-        <span class="caret"></span></a>
+     <li class="active"><a href="admin-home.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-blackboard"></span> College<span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li><a href="member-profile.aspx"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
-            <li><a href="../logout.aspx"><span class="glyphicon glyphicon-off"></span>Sign out</a></li>
+            <li><a href="college-register.aspx"><span class="glyphicon glyphicon-save-file"></span> Register college</a></li>
+            <li><a href="list-college.aspx"><span class="glyphicon glyphicon-list-alt"></span> College list</a></li>
+            
+        </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-map-marker"></span> Address<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="state-register.aspx"><span class="glyphicon glyphicon-king"></span> State</a></li>
+            <li><a href="register-district.aspx"><span class="glyphicon glyphicon-queen"></span> District</a></li>
+            <li><a href="register-taluka.aspx"><span class="glyphicon glyphicon-knight"></span> Taluka</a></li>
+            <li><a href="register-city.aspx"><span class="glyphicon glyphicon-pawn"></span> City</a></li>
+            
+        </ul>
+    </li>
+     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-eye-open"></span> Administration<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="admin-register.aspx"><span class="glyphicon glyphicon-save-file"></span> Register admin</a></li>
+            <li><a href="list-admin.aspx"><span class="glyphicon glyphicon-list-alt"></span> Admin List</a></li>
+            
+        </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Hi!! <span id="admin_name" runat="server">Admin</span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="admin-profile.aspx"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+            <li><a href="../logout.aspx"><span class="glyphicon glyphicon-off"></span> Sign out</a></li>
+            
         </ul>
     </li>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentMain" runat="server">
-
-    <div class="row" style="margin-top: 20px; margin-bottom: 20px; ">
-        <a href="edit-progfile-general.aspx" class="btn btn-info col-md-12 " style="font-size: 25px;">edit profile</a>
-    </div>
+     <div style="padding:20px"></div>
     <div class="panel panel-primary ">
         <div class="panel-heading" style="text-align: center; font-size: 25px;">
             General Information
@@ -168,5 +189,7 @@
         </div>
     </div>
 </asp:Content>
+
+
 <asp:Content ID="Content3" ContentPlaceHolderID="contentScripts" runat="server">
 </asp:Content>
