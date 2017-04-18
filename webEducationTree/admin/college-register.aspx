@@ -29,7 +29,7 @@
         </ul>
     </li>
     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Hi!! <label id="admin_name" runat="server">Admin</label> <span class="caret"></span></a>
+        aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>Hi!! <span id="admin_name" runat="server">Admin</span> <span class="caret"></span></a>
         <ul class="dropdown-menu">
             <li><a href="admin-profile.aspx"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
             <li><a href="../logout.aspx"><span class="glyphicon glyphicon-off"></span> Sign out</a></li>
